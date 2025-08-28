@@ -2,6 +2,12 @@
   "hosting": {
     "site": "app-link-testing2",
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/.well-known/**",
+        "destination": "/.well-known/:splat"
+      }
+    ]
   }
 }
