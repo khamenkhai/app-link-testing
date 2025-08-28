@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Link Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-blue-600">App Link Test Page</h1>
+      <p class="mt-4 text-gray-700">Click a link to open the app:</p>
+      <a
+        href="https://app-link-testing2.web.app/user/123"
+        class="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      >
+        Open in App
+      </a>
+    </div>
+  </body>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCG2VNRUnUvf1Q0OT82Mb7-yEm94xTi_HM",
+      authDomain: "project2-f5cb2.firebaseapp.com",
+      databaseURL:
+        "https://project2-f5cb2-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "project2-f5cb2",
+      storageBucket: "project2-f5cb2.appspot.com",
+      messagingSenderId: "180310985028",
+      appId: "1:180310985028:web:1cfee351fae8e137eb6f11",
+      measurementId: "G-5K3T7W10SX",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
